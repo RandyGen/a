@@ -10,5 +10,5 @@ for sent in doc.sents:
     for token in sent:
         print(token.text+' ← '+token.head.text+', '+token.dep_)
 
-# グラフ表示
-displacy.render(doc, style='dep', jupyter=True, options={'compact':True, 'distance': 90})
+## グラフ表示
+# displacy.render(doc, style='dep', jupyter=True, options={'compact':True, 'distance': 90})
