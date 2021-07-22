@@ -12,7 +12,7 @@ with open(rpath, 'r') as f:
 tagger = MeCab.Tagger('-Owakati -r /etc/mecabrc')
 parsed_text = tagger.parse(text)
 
-wpath = 'ai.txt.parsed'
+wpath = 'ai.txt.wakati'
 
 with open(wpath, 'w') as f:
     f.write(parsed_text)
