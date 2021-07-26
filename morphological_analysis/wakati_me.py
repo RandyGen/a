@@ -1,6 +1,6 @@
 import MeCab
 
-rpath = '../text_data/ai.txt'
+rpath = '../text_data/neko.txt'
 
 with open(rpath, 'r') as f:
     text = f.read()
@@ -12,7 +12,7 @@ with open(rpath, 'r') as f:
 tagger = MeCab.Tagger('-Owakati -r /etc/mecabrc')
 parsed_text = tagger.parse(text)
 
-wpath = 'output/ai.txt.wakati'
+wpath = 'output/neko.txt.wakati'
 
 with open(wpath, 'w') as f:
     f.write(parsed_text)
